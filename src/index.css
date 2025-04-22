@@ -1,0 +1,13 @@
+*
+{
+  font-family: 'Clash Display', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
+
+body
+{
+  flex: 1;
+  background-color: #020202;
+}

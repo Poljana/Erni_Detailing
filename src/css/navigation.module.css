@@ -1,0 +1,55 @@
+
+.navBar 
+{
+    width: 90%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-inline: 5%;
+}
+
+.logo 
+{
+    width: 3rem;
+}
+
+.linkovi
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.link
+{
+    border-bottom: 1px solid transparent;
+}
+
+.link:hover
+{
+    border-bottom: 1px solid #fff;
+}
+
+.active
+{
+    border-bottom: 1px solid #fff;
+}
+
+.rezerviraj 
+{
+    width: 8rem;
+    height: 90%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.rezerviraj:hover 
+{
+    border: 2px solid #fff;
+    cursor: pointer;
+}
