@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <NavBar />
-      <Routes>
-        <Route index element={<Home />} />
-      </Routes>
+        <Routes>
+          <Route index element={<Home />} />
+        </Routes>
       <Footer />
     </>
     

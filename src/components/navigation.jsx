@@ -21,9 +21,14 @@ function NavBar() {
                 <NavLink url="/detailing-brodova" tekst="Detailing Brodova" />
                 <NavLink url="/kontakt" tekst="Kontakt" />                
             </ul>
-            <Link to="/rezervacije">
+            <div className={NavCSS.on_mobile}>
+                <Link to="/rezervacije">
                 <button className={NavCSS.rezerviraj}>Rezerviraj</button>
-            </Link>
+                </Link>
+                <button className={NavCSS.hamburger}>
+                    <ion-icon name="menu"></ion-icon>
+                </button>
+            </div>
         </div>
     )
 }

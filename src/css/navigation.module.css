@@ -1,13 +1,22 @@
 
 .navBar 
 {
+    position: fixed;
+    top: 0;
+    z-index: 2;
     width: 90%;
     height: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     margin: 0;
     padding-inline: 5%;
+    padding-block: 1rem;
+    background: linear-gradient(
+        #020202, #020202,#020202eb, 
+        #0202026b, transparent
+    );
 }
 
 .logo 
@@ -42,7 +51,7 @@
 {
     width: 8rem;
     height: 90%;
-    background-color: transparent;
+    background-color: #020202;
     border: 1px solid #fff;
     border-radius: 0.5rem;
     padding: 0.5rem;
@@ -52,4 +61,41 @@
 {
     border: 2px solid #fff;
     cursor: pointer;
+}
+
+.on_mobile
+{
+    display: flex;
+    gap: 1rem;
+}
+
+ion-icon
+{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 771px) {
+    .hamburger
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 771px) {
+    .linkovi
+    {
+        display: none;
+    }
+    .hamburger
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        width: 2rem;
+        background-color: transparent;
+        border: none;
+    }
 }

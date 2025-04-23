@@ -5,8 +5,8 @@ function Footer() {
 
     const LinkList = ({imeListe, children}) => {
         return(
-            <ul>
-                <li>{imeListe}</li>
+            <ul className={FootCSS.link_lista}>
+                <li style={{fontSize: "14px", color: "#999999"}}>{imeListe}</li>
                 {children}
             </ul>
         )
@@ -14,24 +14,24 @@ function Footer() {
 
     const FooterLink = ({url, tekst}) => {
         return(
-            <li>
-                <Link to={url}>{tekst}</Link>
+            <li className={FootCSS.footer_link}>
+                <Link className={FootCSS.footer_link} to={url}>{tekst}</Link>
             </li>
         )
     }
 
     return(
         <div className={FootCSS.footer}>
-            <div>
-                <div>
-                    <p>Erni Detailing</p>
-                    <p>
+            <div className={[FootCSS.container, FootCSS.border_bottom].join(" ")}>
+                <div className={FootCSS.subcontainer1}>
+                    <p style={{marginBottom: "1rem"}}>Erni Detailing</p>
+                    <p className={FootCSS.citat}>
                         Doživite prestiž profesionalno očišćenih vozila i brodova 
                         koji zrače elegancijom i profinjenošću u svakom detalju.
                     </p>
                 </div>
-                <div>
-                    <LinkList imeListe="Stranica">
+                <div className={FootCSS.subcontainer}>
+                    <LinkList imeListe="Stranica" >
                         <FooterLink tekst="Usluge" />
                         <FooterLink tekst="Cjenik" />
                         <FooterLink tekst="O nama" />
@@ -49,12 +49,12 @@ function Footer() {
                     </LinkList>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p>Erni Detailing © 2025</p>
+            <div className={FootCSS.container}>
+                <div className={FootCSS.subcontainer}>
+                    <p style={{fontSize: "14px"}}>Erni Detailing © 2025</p>
                 </div>
-                <div>
-                    <ul>
+                <div className={FootCSS.subcontainer}>
+                    <ul className={FootCSS.bottom_links}>
                         <FooterLink tekst="Uvjeti korištenja" />
                         <FooterLink tekst="Pravila privatnosti" />
                     </ul>
