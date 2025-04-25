@@ -83,12 +83,12 @@ h1
 .cetiri_kartice
 {
     margin-block: 7rem;
+    margin-inline: 7.5%;
     width: 85%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     .kartica_br
     {
-        width: 25%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -106,4 +106,156 @@ h1
     }
 }
 
+h2
+{
+    width: 85%;
+    height: 4rem;
+    font-size: 45px;
+    letter-spacing: 1px;
+    text-align: start;
+    border-bottom: 1px solid #999999;
+    margin-bottom: 4rem;
+}
 
+.nase_usluge
+{
+    width: 85%;
+    padding-inline: 7.5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.odlike
+{
+    width: 85%;
+    margin-inline: 7.5%;
+    margin-block: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2
+    {
+        border: none;
+        font-size: 40px;
+        width: 100%;
+        margin: 0;
+    }
+    img
+    {
+        width: 40%;
+        aspect-ratio: 1/1;
+    }
+    .kartice
+    {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    .odlika
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-block: 2rem;
+        .subtitle
+        {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img
+            {
+                width: 1.5rem;
+            }
+            p
+            {
+                font-size: 20px; 
+                color: #fff;         
+            }
+        }
+    }
+    p
+    {
+        color: #bdbdbd;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    .odlika:nth-child(3)
+    {
+        border-block: 1px solid #99999940;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    h2
+    {
+        font-size: 30px;
+    }
+    .nase_usluge
+    {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+    .cetiri_kartice
+    {
+        gap: 1rem;
+        .kartica_br
+        {
+           .broj
+            {
+                font-size: 35px;
+            }
+            .tekst
+            {
+                font-size: 16px;
+            } 
+        }
+    }
+    h1
+    {
+        font-size: 40px;
+        width: 80%;
+    }
+    .title
+    {
+        padding-block: 15rem;
+        p
+        {
+            width: 65%;
+            font-size: 12px;
+        }
+        .kontakt
+        {
+            p
+            {
+                width: auto;
+                font-size: 16px;
+            }
+        }
+    }
+    .odlike
+    {
+        flex-direction: column;
+        gap: 2rem;
+        img
+        {
+            width: 85%;
+        }
+        .kartice 
+        {
+            width: 85%;
+            h2
+            {
+                font-size: 25px;
+            }
+        }        
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .cetiri_kartice
+    {
+        grid-template-columns: repeat(2, 1fr);
+        margin-inline: auto;
+    }
+}
