@@ -1,6 +1,7 @@
 import HomeCSS from "..\\css\\home.module.css"
 import { Link } from "react-router-dom"
 import Card1 from "../components/card1"
+import Galerija from "../components/galerija"
 
 function Home() {
 
@@ -24,7 +25,7 @@ function Home() {
             </div>
         )
     }
-
+ 
     return(
         <div className={HomeCSS.home}>
             <div className={HomeCSS.title}>
@@ -60,11 +61,15 @@ function Home() {
                  title="Detailing vozila"
                  desc="Priuštite svom vozilu temeljito ručno 
                  pranje i profesionalnu zaštitu površine"
+                 src="src\assets\image2.png"
+                 url="/detailing-vozila"
                 />
                 <Card1 
                  title="Detailing brodova"
                  desc="Osigurajte svojoj jahti ili brodu 
                  vrhunski tretman koji zaslužuje."
+                 src="src\assets\image2.png"
+                 url="/detailing-brodova"
                 />
             </div>
             <div className={HomeCSS.odlike}>                
@@ -93,9 +98,20 @@ function Home() {
                 </div>
                 <img src="src\assets\image2.png" alt="image2" />
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <Galerija />
+            <div className={HomeCSS.rezerviraj}>
+                <h2>Rezervirajte svoj premium detailing danas</h2>
+                <p className={HomeCSS.tekst}>
+                Kliknite na link ispod. Ispunite podatke 
+                i mi ćemo vam se javiti u roku od 24 sata.
+                </p>
+                <button className={HomeCSS.kontakt}>
+                    <Link to="/kontakt">
+                        <p>Rezerviraj sad</p>
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </Link>
+                </button>
+            </div>
         </div>
     )
 }

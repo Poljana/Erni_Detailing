@@ -1,0 +1,116 @@
+
+.galerija
+{
+    width: 85%;
+    margin-inline: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2
+    {
+        border: none;
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+    .slike
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .slika
+        {
+            position: relative;
+            width: 22%;
+            height: 20rem;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            img 
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+        .zoom_btn
+        {
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            border: none;
+            background-color: #020202;
+            padding: 0.5rem;
+            border-radius: 2rem;
+            img
+            {
+                width: 70%;
+                height: 70%;
+            }
+        }
+        .zoom_btn:hover
+        {
+            cursor: pointer;
+            transition: scale ease 0.2s;
+            scale: 1.2;
+        }
+    }
+    .listanje
+    {
+        width: 100%;
+        height: auto;
+        margin-block: 1rem;
+        display: flex;
+        justify-content: end;
+        button 
+        {
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .activePage 
+        {
+            border: 1px solid #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .galerija
+    {
+        .slike
+        {
+            .slika
+            {
+                height: 13rem;
+            } 
+        }
+        
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .galerija
+    {
+        .slike
+        {
+            .slika
+            {
+                width: 45%;
+                height: 15rem;
+            } 
+        }
+        
+    }
+}
+

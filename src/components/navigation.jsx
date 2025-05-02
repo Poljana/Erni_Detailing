@@ -22,7 +22,7 @@ function NavBar() {
                 <NavLink url="/kontakt" tekst="Kontakt" />                
             </ul>
             <div className={NavCSS.on_mobile}>
-                <Link to="/rezervacije">
+                <Link to="/kontakt">
                 <button className={NavCSS.rezerviraj}>Rezerviraj</button>
                 </Link>
                 <button className={NavCSS.hamburger}>
