@@ -1,10 +1,10 @@
-import AutoCSS from "..\\css\\vozila.module.css"
+import BrodCSS from "..\\css\\vozila.module.css"
 import { Link } from "react-router-dom"
 import Card2 from "../components/card2"
 import Card3 from "../components/card3"
 import { useEffect, useState } from "react"
 
-function DetailingVozila() {
+function DetailingBrodova() {
     const [showCard, setShowCard] = useState(null)
 
     useEffect(() => {
@@ -21,22 +21,22 @@ function DetailingVozila() {
 
     return(
         <>
-        <div className={AutoCSS.pranje_automobila}>
-            <div className={AutoCSS.naslovnica}>
+        <div className={BrodCSS.pranje_automobila}>
+            <div className={BrodCSS.naslovnica}>
                 <h1>Uvijek održavaj svoj automobil čistim</h1>
-                <img src="src\assets\automobil.png" alt="auto" />
-                <p className={AutoCSS.citat}>
+                <img src="src\assets\brod.png" alt="auto" />
+                <p className={BrodCSS.citat}>
                 "Jer svaki auto zaslužuje više od prosjeka -
                 zaslužuje čistoću kao standard."
                 </p>
-                <button className={AutoCSS.kontakt}>
+                <button className={BrodCSS.kontakt}>
                     <Link to="/kontakt">
                         <p>Rezerviraj</p>
                         <ion-icon name="arrow-forward"></ion-icon>
                     </Link>
                 </button>
             </div>
-            <div className={AutoCSS.paketi}>
+            <div className={BrodCSS.paketi}>
                 <h2>Paketi</h2>
                 <Card2 
                  src="src\assets\image2.png"
@@ -127,4 +127,4 @@ function DetailingVozila() {
     )
 }
 
-export default DetailingVozila
+export default DetailingBrodova
