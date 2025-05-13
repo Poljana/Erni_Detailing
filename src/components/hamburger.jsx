@@ -1,18 +1,21 @@
 import HamCSS from "..\\css\\hamb.module.css"
 import { Link } from "react-router-dom"
 
-function Hamburger() {
+function Hamburger({ hamStyles }) {
     const NavLink = ({ to, title }) => {
         return(
             <div className={HamCSS.link}>
-                <Link to={`/${to}`}>{title}</Link>
-                <ion-icon name="arrow-forward"></ion-icon>
+                <Link to={`/${to}`}>
+                    {title}
+                    <ion-icon name="arrow-forward"></ion-icon>
+                </Link>
             </div>
         )
     }
 
     return(
-        <div className={HamCSS.container}>
+        <div 
+         className={hamStyles}>
             <div className={HamCSS.hamb_menu}>
                 <div className={HamCSS.logo}>
                     <img src="src\assets\image1.png" alt="logo" />
@@ -21,8 +24,8 @@ function Hamburger() {
                         <p>ernidetailing@gmail.com</p>
                     </div>
                 </div>
-                <div>
-                    <NavLink to={null} title="Naslovna" />
+                <div className={HamCSS.linkovi}>
+                    <NavLink to="" title="Naslovna" />
                     <NavLink to="detailing-vozila" title="Detailing Vozila" />
                     <NavLink to="detailing-brodova" title="Detailing brodova" />
                     <NavLink to="kontakt" title="Kontakt" />

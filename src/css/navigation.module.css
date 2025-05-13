@@ -3,7 +3,7 @@
 {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 16;
     width: 90%;
     height: 5%;
     display: flex;
@@ -17,6 +17,11 @@
         #020202, #020202,#020202eb, 
         #0202026b, transparent
     );
+}
+
+.withHamburger
+{
+    background: #020202;
 }
 
 .logo 
@@ -97,5 +102,9 @@ ion-icon
         width: 2rem;
         background-color: transparent;
         border: none;
+    }
+    .hamburger:hover
+    {
+        cursor: pointer;
     }
 }

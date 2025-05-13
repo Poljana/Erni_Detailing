@@ -12,6 +12,7 @@ function Galerija() {
     { url: "src/assets/image2.png", id: "img7" },
   ];
 
+  const [fullscreenImage, setFullscreenImage] = useState(false)
   const [currentPage, setCurrentPage] = useState(0);
   const [imagesPerPage, setImagesPerPage] = useState(
     window.innerWidth < 770 ? 2 : 4
@@ -20,7 +21,6 @@ function Galerija() {
   useEffect(() => {
     const handleResize = () => {
       setImagesPerPage(window.innerWidth < 770 ? 2 : 4);
-      setCurrentPage(0); 
     };
 
     window.addEventListener("resize", handleResize);
@@ -35,8 +35,14 @@ function Galerija() {
   const Slika = ({ url, id }) => (
     <div className={GalerijaCSS.slika}>
       <img src={url} alt={id} />
-      <button className={GalerijaCSS.zoom_btn}>
-        <img src="src/assets/search-interface-symbol1.png" alt="zoom" />
+      <button 
+       className={GalerijaCSS.zoom_btn}
+       onClick={() => setFullscreenImage(url)}
+      >
+        <img
+         src="src/assets/search-interface-symbol1.png" 
+         alt="zoom" 
+        />
       </button>
     </div>
   );
@@ -63,12 +69,27 @@ function Galerija() {
     </div>
   );
 
+  const FullscreenView = ({ url, onClose }) => (
+    <div className={GalerijaCSS.fullscreen_overlay} onClick={onClose}>
+      <img src={url} alt="fullscreen" className={GalerijaCSS.fullscreen} />
+    </div>
+  );
+
   return (
+    <>
     <div className={GalerijaCSS.galerija}>
       <h2>Galerija</h2>
       <Slike />
       <Listanje />
     </div>
+    {fullscreenImage && (
+      <FullscreenView
+        url={fullscreenImage}
+        onClose={() => setFullscreenImage(null)}
+      />
+    )}
+    </>
+    
   );
 }
 

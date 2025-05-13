@@ -238,6 +238,7 @@
     .container
     {
         align-items: start;
+        padding-top: 4rem;
         .card3
         {
             width: 75%;
