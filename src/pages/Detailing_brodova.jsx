@@ -23,11 +23,11 @@ function DetailingBrodova() {
         <>
         <div className={BrodCSS.pranje_automobila}>
             <div className={BrodCSS.naslovnica}>
-                <h1>Uvijek održavaj svoj automobil čistim</h1>
+                <h1>Neka vaš brod uvijek blista kao prvi dan</h1>
                 <img src="src\assets\brod.png" alt="auto" />
                 <p className={BrodCSS.citat}>
-                "Jer svaki auto zaslužuje više od prosjeka -
-                zaslužuje čistoću kao standard."
+                "Jer čistoća nije luksuz - to je 
+                standard koji vaš brod zaslužuje."
                 </p>
                 <button className={BrodCSS.kontakt}>
                     <Link to="/kontakt">
@@ -40,35 +40,35 @@ function DetailingBrodova() {
                 <h2>Paketi</h2>
                 <Card2 
                  src="src\assets\image2.png"
-                 title="Kemijsko čišćenje interijera"
+                 title="Dubinsko pranje i  vosak"
                  onClick={() => setShowCard(1)}
                 >
                     <p>
-                    Dubinsko usisavanje interijera,<br />
-                    Kemijsko čišćenje sjedala i tapecirunga,<br />
-                    Čišćenje i dezinfekcija svih plastičnih i kožnih površina ... 
+                    Pranje <br />
+                    Čišćenje protukliznih površina <br />
+                    Čišćenje i zaštita sjedala ...                     
                     </p>
                 </Card2>
                 <Card2 
                  src="src\assets\image2.png"
-                 title="Standardni detailing"
+                 title="Poliranje i sjaj"
                  onClick={() => setShowCard(2)}
                 >
                     <p>
-                    Dubinsko usisavanje interijera,<br />
-                    Kemijsko čišćenje sjedala i tapecirunga,<br />
-                    Čišćenje i dezinfekcija svih plastičnih i kožnih površina ...  
+                    Pranje <br />
+                    Čišćenje protukliznih površina <br />
+                    Čišćenje i zaštita sjedala ...                    
                     </p>
                 </Card2>
                 <Card2 
                  src="src\assets\image2.png"
-                 title="Kompletni detailing"
+                 title="Besprijekorno sjajno"
                  onClick={() => setShowCard(3)}
                 >
                     <p>
-                    Dubinsko usisavanje interijera,<br />
-                    Kemijsko čišćenje sjedala i tapecirunga,<br />
-                    Čišćenje i dezinfekcija svih plastičnih i kožnih površina ... 
+                    Pranje <br />
+                    čišćenje protukliznih površina <br />
+                    Čišćenje i zaštita sjedala ...
                     </p>
                 </Card2>
             </div>
@@ -76,51 +76,53 @@ function DetailingBrodova() {
         <Card3
          className={showCard == 1 ? "show_container" : "hide_container"}
          src="src\assets\image2.png"
-         title="Kemijsko čišćenje interijera"
-         cijena="120"
+         title="Dubinsko pranje i  vosak"
          onClick={() => setShowCard(0)}
         >
-            <li>Dubinsko usisivanje interijera</li>
-            <li>Kemijsko čišćenje sjedala i tapecirunga</li>
-            <li>Čišćenje i dezinfekcija svih plastičnih i kožnih površina</li>
-            <li>Osvježavanje i zaštita svih plastičnih površina</li>
-            <li>Impregnacija kožnih površina</li>
-            <li>Neutralizacija neugodnih mirisa</li>
+            <li>Pranje</li>
+            <li>Čišćenje protukliznih površina</li>
+            <li>Čišćenje i zaštita sjedala</li>
+            <li>Čišćenje pretinaca</li>
+            <li>Uklanjanje pljesnji i vlage</li>
+            <li>Poliranje inox-a</li>
+            <li>Čišćenje trupa</li>
+            <li>Čišćenje motora</li>
+            <li>Aplikacija zaštitnog voska</li>
         </Card3>
         <Card3
          className={showCard == 2 ? "show_container" : "hide_container"}
          src="src\assets\image2.png"
-         title="Standardni detail"
-         cijena="170"
+         title="Poliranje i sjaj"
          onClick={() => setShowCard(0)}
         >
-            <li>Dubinsko usisivanje interijera</li>
-            <li>Kemijsko čišćenje sjedala i tapecirunga</li>
-            <li>Čišćenje i dezinfekcija svih plastičnih i kožnih površina</li>
-            <li>Osvježavanje i zaštitasvih plastičnih površina</li>
-            <li>Neutralizacija neugodnih mirisa</li>
-            <li>Vanjsko pranje vozila</li>
-            <li>Detaljno čišćenje felgi</li>
-            <li>Njega i sjaj za gume</li>
-            <li>Impregnacija kožnih površina</li>
+            <li>Pranje</li>
+            <li>Čišćenje protukliznih površina</li>
+            <li>Čišćenje i zaštita sjedala</li>
+            <li>Čišćenje pretinaca</li>
+            <li>Uklanjanje pljesnji i vlage</li>
+            <li>Poliranje inox-a</li>
+            <li>Čišćenje trupa</li>
+            <li>Čišćenje motora</li>
+            <li>Poliranje u 2 koraka</li>
+            <li>Aplikacija zaštitnog voska</li>
         </Card3>
         <Card3
          className={showCard == 3 ? "show_container" : "hide_container"}
          src="src\assets\image2.png"
          title="Kompletni detail"
-         cijena="270"
          onClick={() => setShowCard(0)}
         >
-            <li>Dubinsko usisivanje interijera</li>
-            <li>Kemijsko čišćenje sjedala i tapecirunga</li>
-            <li>Čišćenje i dezinfekcija svih plastičnih i kožnih površina</li>
-            <li>Osvježavanje i zaštitasvih plastičnih površina</li>
-            <li>Neutralizacija neugodnih mirisa</li>
-            <li>Vanjsko pranje vozila</li>
-            <li>Detaljno čišćenje felgi</li>
-            <li>Njega i sjaj za gume</li>
-            <li>Impregnacija kožnih površina</li>
-            <li>Jednoslojno poliranje vozila</li>
+            <li>Pranje</li>
+            <li>Čišćenje protukliznih površina</li>
+            <li>Čišćenje i zaštita sjedala</li>
+            <li>Čišćenje pretinaca</li>
+            <li>Uklanjanje pljesnji i vlage</li>
+            <li>Poliranje inox-a</li>
+            <li>Čišćenje trupa</li>
+            <li>Čišćenje motora</li>
+            <li>Vodeno brušenje</li>
+            <li>Grubo poliranje u 2 koraka</li>
+            <li>Fino poliranje u 2 koraka</li>
             <li>Aplikacija zaštitnog voska</li>
         </Card3>
         </>

@@ -53,12 +53,12 @@ function Footer() {
                 <div className={FootCSS.subcontainer}>
                     <p style={{fontSize: "14px"}}>Erni Detailing © 2025</p>
                 </div>
-                <div className={FootCSS.subcontainer}>
+                {/* <div className={FootCSS.subcontainer}>
                     <ul className={FootCSS.bottom_links}>
                         <FooterLink tekst="Uvjeti korištenja" />
                         <FooterLink tekst="Pravila privatnosti" />
                     </ul>
-                </div>
+                </div> */}
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
-import { Link, useLocation } from "react-router-dom"
 import NavCSS from "..\\css\\navigation.module.css"
+import { Link, useLocation } from "react-router-dom"
+import Hamburger from "./hamburger"
 
 function NavBar() {
     const location = useLocation()
@@ -13,6 +14,7 @@ function NavBar() {
     }
 
     return(
+        <>
         <div className={NavCSS.navBar}>
             <img src="src\assets\image1.png" alt="logo" className={NavCSS.logo} />
             <ul className={NavCSS.linkovi}>
@@ -30,6 +32,9 @@ function NavBar() {
                 </button>
             </div>
         </div>
+        <Hamburger />
+        </>
+        
     )
 }
 

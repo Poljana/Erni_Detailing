@@ -135,6 +135,7 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
+    overflow-y: scroll;
     .card3
     {
         width: 80%;
@@ -236,6 +237,7 @@
     }
     .container
     {
+        align-items: start;
         .card3
         {
             width: 75%;

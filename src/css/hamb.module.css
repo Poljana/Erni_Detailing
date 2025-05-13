@@ -1,0 +1,45 @@
+
+.container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: start;
+    z-index: 15;
+    .hamb_menu
+    {
+        width: 100%;
+        background-color: #020202;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid #484444;
+        .logo
+        {
+            display: flex;
+            gap: 1rem;
+            padding: 2rem;
+            border-bottom: 1px solid #484444;
+            img
+            {
+                width: 5rem;
+                height: 5rem;
+            }
+            div
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                p
+                {
+                    color: #FFFFFF80;
+                }
+            }
+        }
+    }
+}

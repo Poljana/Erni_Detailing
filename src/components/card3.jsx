@@ -10,7 +10,11 @@ function Card3({ src, title, children, onClick, cijena, className }) {
                     <ul className={CardsCSS.tekst}>
                         {children}
                     </ul>
-                    <h3>Cijena: {cijena}€</h3>
+                    {
+                        cijena ?
+                        <h3>Cijena: {cijena}€</h3> :
+                        <h3>Besplatan pregled broda i uspostava cijene</h3>
+                    }
                     <button onClick={onClick}>
                         <ion-icon name="close"></ion-icon>
                     </button>
