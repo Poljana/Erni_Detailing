@@ -31,21 +31,14 @@ function Footer() {
                     </p>
                 </div>
                 <div className={FootCSS.subcontainer}>
-                    <LinkList imeListe="Stranica" >
-                        <FooterLink tekst="Usluge" />
-                        <FooterLink tekst="Cjenik" />
-                        <FooterLink tekst="O nama" />
-                    </LinkList>
-                    <LinkList imeListe="Kontakt">
-                        <FooterLink tekst="Ponuda" />
-                        <FooterLink tekst="Obrazac" />
-                        <FooterLink tekst="Email" />
-                    </LinkList>
                     <LinkList imeListe="Društvene Mreže">
                         <FooterLink tekst="Facebook" />
                         <FooterLink tekst="Instagram" />
-                        <FooterLink tekst="Twitter" />
                         <FooterLink tekst="Youtube" />
+                    </LinkList>                    
+                    <LinkList imeListe="Kontakt">
+                        <p>ernidetailing@gmail.com</p>
+                        <FooterLink url="/kontakt" tekst="Kontaktiraj" />
                     </LinkList>
                 </div>
             </div>
@@ -53,12 +46,6 @@ function Footer() {
                 <div className={FootCSS.subcontainer}>
                     <p style={{fontSize: "14px"}}>Erni Detailing © 2025</p>
                 </div>
-                {/* <div className={FootCSS.subcontainer}>
-                    <ul className={FootCSS.bottom_links}>
-                        <FooterLink tekst="Uvjeti korištenja" />
-                        <FooterLink tekst="Pravila privatnosti" />
-                    </ul>
-                </div> */}
             </div>
         </div>
     )
