@@ -1,8 +1,11 @@
 
 .galerija
 {
-    width: 85%;
-    margin-inline: 7.5%;
+    background: linear-gradient(transparent, 
+    #830303, #830303, #830303, 
+    #830303, #830303, #830303,
+    #830303, transparent);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +22,7 @@
     {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 85%;
         .slika
         {
             position: relative;

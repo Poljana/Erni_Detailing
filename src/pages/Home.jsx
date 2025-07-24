@@ -43,12 +43,17 @@ function Home() {
                     </Link>
                 </button>
             </div>
+            {/* 
+
+                VRATITI KAD SE NABAVI VIDEO
+
             <div className={HomeCSS.video}>
                 <video controls>
                     <source src="#" type="videp/mp4" />
                     Your browser does not support this video tag.
                 </video>
             </div>
+             */}
             <div className={HomeCSS.cetiri_kartice}>
                 <KarticaBroj broj="01" tekst="Kvaliteta ZAJAMČENA" />
                 <KarticaBroj broj="02" tekst="Prirodno PRIHVATLJIVO" />

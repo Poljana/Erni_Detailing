@@ -123,6 +123,10 @@ h2
     padding-inline: 7.5%;
     display: flex;
     justify-content: space-evenly;
+    background: linear-gradient(transparent, 
+    #830303, #830303, #830303, 
+    #830303, #830303, #830303,
+    #830303, transparent);
 }
 
 .odlike

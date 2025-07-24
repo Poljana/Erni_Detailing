@@ -6,6 +6,19 @@ import { useEffect, useState } from "react"
 
 function DetailingVozila() {
     const [showCard, setShowCard] = useState(null)
+    const [carSlide, setCarSlide] = useState(null)
+
+    useEffect(() => {
+        const handleDomContentLoaded = () => {
+            setTimeout(() => {                
+            }, 1000);
+            setCarSlide(true)
+        }
+
+        window.addEventListener('DOMContentLoaded', handleDomContentLoaded)
+
+        return window.removeEventListener('DOMContentLoaded', handleDomContentLoaded)
+    }, [])
 
     useEffect(() => {
         if (showCard) {
@@ -24,7 +37,7 @@ function DetailingVozila() {
         <div className={AutoCSS.pranje_automobila}>
             <div className={AutoCSS.naslovnica}>
                 <h1>Uvijek održavaj svoj automobil čistim</h1>
-                <img src="src\assets\automobil.png" alt="auto" />
+                <img className={`${carSlide} ? ${AutoCSS.slide} : ${AutoCSS.translated}`} src="src\assets\automobil.png" alt="auto" />
                 <p className={AutoCSS.citat}>
                 "Jer svaki auto zaslužuje više od prosjeka -
                 zaslužuje čistoću kao standard."

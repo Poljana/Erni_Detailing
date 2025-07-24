@@ -1,10 +1,15 @@
 
 .pranje_automobila
 {
-    width: 85%;
-    margin-inline: 7.5%;   
+    width: 100%;   
     .naslovnica
     {
+        width: 85%;
+        margin-inline: 7.5%;
+        img
+        {
+            transition: 0.3s ease-in-out all;
+        }
         .kontakt
         {
             border: none;
@@ -44,15 +49,30 @@
     } 
     .paketi
     {
+        background: linear-gradient(transparent, 
+        #830303, #830303, #830303, 
+        #830303, #830303, #830303,
+        #830303, transparent);
         display: flex;
         flex-direction: column;
         margin-top: 3rem;
+        padding-inline: 7.5%;
         h2
         {
             border: none;
             margin-bottom: 1rem;
         }
     }
+}
+
+.translated
+{
+    transform: translate(100%, -5rem);
+}
+
+.slide
+{
+    transform: translate(0, 0);
 }
 
 @media screen and (min-width: 1100px) {
