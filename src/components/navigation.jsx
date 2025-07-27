@@ -22,7 +22,7 @@ function NavBar() {
 
     return(
         <>
-        <div className={`${NavCSS.navBar} ${visibility ? NavCSS.withHamburger : null}`}>
+        <div className={NavCSS.navBar}>
             <img src="src\assets\image1.png" alt="logo" className={NavCSS.logo} />
             <ul className={NavCSS.linkovi}>
                 <NavLink url="/" tekst="Naslovna" />

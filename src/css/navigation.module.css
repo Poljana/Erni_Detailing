@@ -13,15 +13,7 @@
     margin: 0;
     padding-inline: 5%;
     padding-block: 1rem;
-    background: linear-gradient(
-        #1B1B1B, #1b1b1b, #1b1b1bed, 
-        #1b1b1bb9, transparent
-    );
-}
-
-.withHamburger
-{
-    background: #020202;
+    background-color: #1B1B1B;
 }
 
 .logo 

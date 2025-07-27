@@ -15,7 +15,7 @@ function Footer() {
     const FooterLink = ({url, tekst}) => {
         return(
             <li className={FootCSS.footer_link}>
-                <Link className={FootCSS.footer_link} to={url}>{tekst}</Link>
+                <Link className={FootCSS.footer_link} to={url} target="_blank">{tekst}</Link>
             </li>
         )
     }
@@ -32,9 +32,8 @@ function Footer() {
                 </div>
                 <div className={FootCSS.subcontainer}>
                     <LinkList imeListe="Društvene Mreže">
-                        <FooterLink tekst="Facebook" />
-                        <FooterLink tekst="Instagram" />
-                        <FooterLink tekst="Youtube" />
+                        <FooterLink tekst="Facebook" url="https://www.facebook.com/profile.php?id=61563368737167" />
+                        <FooterLink tekst="Instagram" url="https://www.instagram.com/erni_detailing/" />
                     </LinkList>                    
                     <LinkList imeListe="Kontakt">
                         <p>ernidetailing@gmail.com</p>

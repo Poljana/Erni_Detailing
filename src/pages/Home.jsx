@@ -66,14 +66,14 @@ function Home() {
                  title="Detailing vozila"
                  desc="Priuštite svom vozilu temeljito ručno 
                  pranje i profesionalnu zaštitu površine"
-                 src="src\assets\image2.png"
+                 src="src\assets\nase_usluge_auto.png"
                  url="/detailing-vozila"
                 />
                 <Card1 
                  title="Detailing brodova"
                  desc="Osigurajte svojoj jahti ili brodu 
                  vrhunski tretman koji zaslužuje."
-                 src="src\assets\image2.png"
+                 src="src\assets\nase_usluge_brod.png"
                  url="/detailing-brodova"
                 />
             </div>
@@ -101,7 +101,7 @@ function Home() {
                      luksuzna vozila i plovila."
                     />
                 </div>
-                <img src="src\assets\image2.png" alt="image2" />
+                <img src="src\assets\zasto_izabrati_nas.png" alt="car-image" />
             </div>
             <Galerija />
             <div className={HomeCSS.rezerviraj}>
