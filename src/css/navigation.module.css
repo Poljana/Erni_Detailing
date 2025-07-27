@@ -18,7 +18,8 @@
 
 .logo 
 {
-    width: 3rem;
+    width: 7rem;
+    filter: grayscale(1);
 }
 
 .linkovi

@@ -22,8 +22,13 @@ function NavBar() {
 
     return(
         <>
+<<<<<<< Updated upstream
         <div className={NavCSS.navBar}>
             <img src="src\assets\image1.png" alt="logo" className={NavCSS.logo} />
+=======
+        <div className={`${NavCSS.navBar} ${visibility ? NavCSS.withHamburger : null}`}>
+            <img src="src\assets\logo.png" alt="logo" className={NavCSS.logo} />
+>>>>>>> Stashed changes
             <ul className={NavCSS.linkovi}>
                 <NavLink url="/" tekst="Naslovna" />
                 <NavLink url="/detailing-vozila" tekst="Detailing Vozila" />

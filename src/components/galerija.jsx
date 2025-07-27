@@ -3,13 +3,15 @@ import GalerijaCSS from "..\\css\\galerija.module.css";
 
 function Galerija() {
   const slike = [
-    { url: "src/assets/image2.png", id: "img1" },
-    { url: "src/assets/image2.png", id: "img2" },
-    { url: "src/assets/image2.png", id: "img3" },
-    { url: "src/assets/image2.png", id: "img4" },
-    { url: "src/assets/image2.png", id: "img5" },
-    { url: "src/assets/image2.png", id: "img6" },
-    { url: "src/assets/image2.png", id: "img7" },
+    { url: "src/assets/image00001.jpeg", id: "img1" },
+    { url: "src/assets/image00002.jpeg", id: "img2" },
+    { url: "src/assets/image00003.jpeg", id: "img3" },
+    { url: "src/assets/image00004.jpeg", id: "img4" },
+    { url: "src/assets/image00005.jpeg", id: "img5" },
+    { url: "src/assets/image00006.jpeg", id: "img6" },
+    { url: "src/assets/image00007.jpeg", id: "img7" },
+    { url: "src/assets/image00008.jpeg", id: "img8" },
+    { url: "src/assets/image00009.jpeg", id: "img9" },
   ];
 
   const [fullscreenImage, setFullscreenImage] = useState(false)
