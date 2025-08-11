@@ -66,7 +66,7 @@ function Home() {
                  title="Detailing vozila"
                  desc="Priuštite svom vozilu temeljito ručno 
                  pranje i profesionalnu zaštitu površine"
-                 src="src\assets\nase_usluge_auto.png"
+                 src="src\assets\image00007.jpeg"
                  url="/detailing-vozila"
                 />
                 <Card1 

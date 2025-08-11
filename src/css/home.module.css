@@ -121,12 +121,10 @@ h2
 {
     width: 85%;
     padding-inline: 7.5%;
+    padding-block: 2rem;
     display: flex;
     justify-content: space-evenly;
-    background: linear-gradient(transparent, 
-    #830303, #830303, #830303, 
-    #830303, #830303, #830303,
-    #830303, transparent);
+    background-color: #830303;
 }
 
 .odlike
@@ -151,47 +149,52 @@ h2
         object-fit: cover;
         border-radius: 0.75rem;
     }
-    .kartice
-    {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-    }
-    .odlika
-    {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding-block: 2rem;
-        .subtitle
-        {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            overflow: hidden;
-            width: 1.5rem;
-            img
-            {
-                
-                object-fit: cover;
-            }
-            p
-            {
-                font-size: 20px; 
-                color: #fff;         
-            }
-        }
-    }
+    
     p
     {
         color: #bdbdbd;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 0.5px;
     }
-    .odlika:nth-child(3)
-    {
-        border-block: 1px solid #99999940;
+    
+}
+
+.kartice
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.odlika
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block: 2rem;
+    
+}
+.subtitle
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+    img
+    {        
+        object-fit: cover;
+        width: 2rem;
     }
+    p
+    {
+        font-size: 25px; 
+        color: white;         
+    }
+}
+
+.odlika:nth-child(3)
+{
+    border-block: 1px solid #99999940;
 }
 
 .rezerviraj

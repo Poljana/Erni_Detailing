@@ -49,14 +49,12 @@
     } 
     .paketi
     {
-        background: linear-gradient(transparent, 
-        #830303, #830303, #830303, 
-        #830303, #830303, #830303,
-        #830303, transparent);
+        background-color: #830303;
         display: flex;
         flex-direction: column;
         margin-top: 3rem;
         padding-inline: 7.5%;
+        padding-block: 2rem;
         h2
         {
             border: none;
