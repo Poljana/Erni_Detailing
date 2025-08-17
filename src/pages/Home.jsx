@@ -73,7 +73,7 @@ function Home() {
                  title="Detailing brodova"
                  desc="Osigurajte svojoj jahti ili brodu 
                  vrhunski tretman koji zaslužuje."
-                 src="src\assets\nase_usluge_brod.png"
+                 src="src\assets\brodovi001.png"
                  url="/detailing-brodova"
                 />
             </div>

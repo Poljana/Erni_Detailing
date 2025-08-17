@@ -18,7 +18,6 @@ function Hamburger({ hamStyles }) {
          className={hamStyles}>
             <div className={HamCSS.hamb_menu}>
                 <div className={HamCSS.logo}>
-                    <img src="src\assets\image1.png" alt="logo" />
                     <div>
                         <h3>Erni Detailing</h3>
                         <p>ernidetailing@gmail.com</p>
