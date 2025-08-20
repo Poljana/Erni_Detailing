@@ -37,7 +37,7 @@ function DetailingVozila() {
         <div className={AutoCSS.pranje_automobila}>
             <div className={AutoCSS.naslovnica}>
                 <h1>Uvijek održavaj svoj automobil čistim</h1>
-                <img className={`${carSlide} ? ${AutoCSS.slide} : ${AutoCSS.translated}`} src="src\assets\automobil.png" alt="auto" />
+                <img className={`${carSlide} ? ${AutoCSS.slide} : ${AutoCSS.translated}`} src="\assets\automobil.png" alt="auto" />
                 <p className={AutoCSS.citat}>
                 "Jer svaki auto zaslužuje više od prosjeka -
                 zaslužuje čistoću kao standard."
@@ -52,7 +52,7 @@ function DetailingVozila() {
             <div className={AutoCSS.paketi}>
                 <h2>Paketi</h2>
                 <Card2 
-                 src="src\assets\vozila001.png"
+                 src="\assets\vozila001.png"
                  title="Kemijsko čišćenje interijera"
                  onClick={() => setShowCard(1)}
                 >
@@ -63,7 +63,7 @@ function DetailingVozila() {
                     </p>
                 </Card2>
                 <Card2 
-                 src="src\assets\vozila002.png"
+                 src="\assets\vozila002.png"
                  title="Standardni detailing"
                  onClick={() => setShowCard(2)}
                 >
@@ -74,7 +74,7 @@ function DetailingVozila() {
                     </p>
                 </Card2>
                 <Card2 
-                 src="src\assets\vozila003.png"
+                 src="\assets\vozila003.png"
                  title="Kompletni detailing"
                  onClick={() => setShowCard(3)}
                 >
@@ -88,7 +88,7 @@ function DetailingVozila() {
         </div>
         <Card3
          className={showCard == 1 ? "show_container" : "hide_container"}
-         src="src\assets\vozila001.png"
+         src="\assets\vozila001.png"
          title="Kemijsko čišćenje interijera"
          cijena="120"
          onClick={() => setShowCard(0)}
@@ -102,7 +102,7 @@ function DetailingVozila() {
         </Card3>
         <Card3
          className={showCard == 2 ? "show_container" : "hide_container"}
-         src="src\assets\vozila002.png"
+         src="\assets\vozila002.png"
          title="Standardni detail"
          cijena="170"
          onClick={() => setShowCard(0)}
@@ -119,7 +119,7 @@ function DetailingVozila() {
         </Card3>
         <Card3
          className={showCard == 3 ? "show_container" : "hide_container"}
-         src="src\assets\vozila003.png"
+         src="\assets\vozila003.png"
          title="Kompletni detail"
          cijena="270"
          onClick={() => setShowCard(0)}

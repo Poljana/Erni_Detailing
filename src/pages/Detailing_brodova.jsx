@@ -24,7 +24,7 @@ function DetailingBrodova() {
         <div className={BrodCSS.pranje_automobila}>
             <div className={BrodCSS.naslovnica}>
                 <h1>Neka vaš brod uvijek blista kao prvi dan</h1>
-                <img src="src\assets\brod.png" alt="auto" />
+                <img src="\assets\brod.png" alt="auto" />
                 <p className={BrodCSS.citat}>
                 "Jer čistoća nije luksuz - to je 
                 standard koji vaš brod zaslužuje."
@@ -39,7 +39,7 @@ function DetailingBrodova() {
             <div className={BrodCSS.paketi}>
                 <h2>Paketi</h2>
                 <Card2 
-                 src="src\assets\brodovi001.png"
+                 src="\assets\brodovi001.png"
                  title="Dubinsko pranje i  vosak"
                  onClick={() => setShowCard(1)}
                 >
@@ -50,7 +50,7 @@ function DetailingBrodova() {
                     </p>
                 </Card2>
                 <Card2 
-                 src="src\assets\brodovi002.png"
+                 src="\assets\brodovi002.png"
                  title="Poliranje i sjaj"
                  onClick={() => setShowCard(2)}
                 >
@@ -61,7 +61,7 @@ function DetailingBrodova() {
                     </p>
                 </Card2>
                 <Card2 
-                 src="src\assets\brodovi003.png"
+                 src="\assets\brodovi003.png"
                  title="Besprijekorno sjajno"
                  onClick={() => setShowCard(3)}
                 >
@@ -75,7 +75,7 @@ function DetailingBrodova() {
         </div>
         <Card3
          className={showCard == 1 ? "show_container" : "hide_container"}
-         src="src\assets\brodovi001.png"
+         src="\assets\brodovi001.png"
          title="Dubinsko pranje i  vosak"
          onClick={() => setShowCard(0)}
         >
@@ -91,7 +91,7 @@ function DetailingBrodova() {
         </Card3>
         <Card3
          className={showCard == 2 ? "show_container" : "hide_container"}
-         src="src\assets\brodovi002.png"
+         src="\assets\brodovi002.png"
          title="Poliranje i sjaj"
          onClick={() => setShowCard(0)}
         >
@@ -108,7 +108,7 @@ function DetailingBrodova() {
         </Card3>
         <Card3
          className={showCard == 3 ? "show_container" : "hide_container"}
-         src="src\assets\brodovi003.png"
+         src="\assets\brodovi003.png"
          title="Kompletni detail"
          onClick={() => setShowCard(0)}
         >

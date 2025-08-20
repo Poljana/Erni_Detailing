@@ -66,14 +66,14 @@ function Home() {
                  title="Detailing vozila"
                  desc="Priuštite svom vozilu temeljito ručno 
                  pranje i profesionalnu zaštitu površine"
-                 src="src\assets\image00007.jpeg"
+                 src="\assets\image00007.jpeg"
                  url="/detailing-vozila"
                 />
                 <Card1 
                  title="Detailing brodova"
                  desc="Osigurajte svojoj jahti ili brodu 
                  vrhunski tretman koji zaslužuje."
-                 src="src\assets\brodovi001.png"
+                 src="\assets\brodovi001.png"
                  url="/detailing-brodova"
                 />
             </div>
@@ -81,27 +81,27 @@ function Home() {
                 <div className={HomeCSS.kartice}>
                     <h2>Zašto izabrati Nas?</h2>
                     <Odlike 
-                     img="src\assets\Precision.png" 
+                     img="\assets\Precision.png" 
                      title="Precizan rad"
                      opis="Održavamo najviše standarde
                      profesionalnosti pri detailingu vaših vozila i plovila."
                     />
                     <Odlike 
-                     img="src\assets\Diamond.png" 
+                     img="\assets\Diamond.png" 
                      title="Premium proizvodi i usluge"
                      opis="Osigurajte dugovječnost vaše
                      imovine s periodičnim tretmanom detailinga
                      i zaštite svih površina."
                     />
                     <Odlike 
-                     img="src\assets\Security.png" 
+                     img="\assets\Security.png" 
                      title="Visoka razina sigurnosti i privatnosti"
                      opis="Razumijemo važnost privatnosti i sigurnosti
                      za klijente koji nam povjeravaju svoja
                      luksuzna vozila i plovila."
                     />
                 </div>
-                <img src="src\assets\zasto_izabrati_nas.png" alt="car-image" />
+                <img src="\assets\zasto_izabrati_nas.png" alt="car-image" />
             </div>
             <Galerija />
             <div className={HomeCSS.rezerviraj}>

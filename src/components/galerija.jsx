@@ -3,15 +3,15 @@ import GalerijaCSS from "..\\css\\galerija.module.css";
 
 function Galerija() {
   const slike = [
-    { url: "src/assets/image00001.jpeg", id: "img1" },
-    { url: "src/assets/image00002.jpeg", id: "img2" },
-    { url: "src/assets/image00003.jpeg", id: "img3" },
-    { url: "src/assets/image00004.jpeg", id: "img4" },
-    { url: "src/assets/image00005.jpeg", id: "img5" },
-    { url: "src/assets/image00006.jpeg", id: "img6" },
-    { url: "src/assets/image00007.jpeg", id: "img7" },
-    { url: "src/assets/image00008.jpeg", id: "img8" },
-    { url: "src/assets/image00009.jpeg", id: "img9" },
+    { url: "/assets/image00001.jpeg", id: "img1" },
+    { url: "/assets/image00002.jpeg", id: "img2" },
+    { url: "/assets/image00003.jpeg", id: "img3" },
+    { url: "/assets/image00004.jpeg", id: "img4" },
+    { url: "/assets/image00005.jpeg", id: "img5" },
+    { url: "/assets/image00006.jpeg", id: "img6" },
+    { url: "/assets/image00007.jpeg", id: "img7" },
+    { url: "/assets/image00008.jpeg", id: "img8" },
+    { url: "/assets/image00009.jpeg", id: "img9" },
   ];
 
   const [fullscreenImage, setFullscreenImage] = useState(false)
@@ -42,7 +42,7 @@ function Galerija() {
        onClick={() => setFullscreenImage(url)}
       >
         <img
-         src="src/assets/search-interface-symbol1.png" 
+         src="/assets/search-interface-symbol1.png" 
          alt="zoom" 
         />
       </button>
