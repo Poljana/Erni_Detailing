@@ -211,7 +211,7 @@ h2
     margin-block: 5rem;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('src/assets/audi_volan.png');
+        url('/assets/audi_volan.png');
     background-size: cover;
     background-position: center;
     border-radius: 0.75rem;    
