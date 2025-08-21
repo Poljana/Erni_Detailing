@@ -12,6 +12,23 @@ function Galerija() {
     { url: "/assets/image00007.jpeg", id: "img7" },
     { url: "/assets/image00008.jpeg", id: "img8" },
     { url: "/assets/image00009.jpeg", id: "img9" },
+    { url: "/assets/image00010.jpeg", id: "img10" },
+    { url: "/assets/image00011.jpeg", id: "img11" },
+    { url: "/assets/image00012.jpeg", id: "img12" },
+    { url: "/assets/image00013.jpeg", id: "img13" },
+    { url: "/assets/image00014.jpeg", id: "img14" },
+    { url: "/assets/image00015.jpeg", id: "img15" },
+    { url: "/assets/image00016.jpeg", id: "img16" },
+    { url: "/assets/image00017.jpeg", id: "img17" },
+    { url: "/assets/image00018.jpeg", id: "img18" },
+    { url: "/assets/image00019.jpeg", id: "img19" },
+    { url: "/assets/image00020.jpeg", id: "img20" },
+    { url: "/assets/image00021.jpeg", id: "img21" },
+    { url: "/assets/image00022.jpeg", id: "img22" },
+    { url: "/assets/image00023.jpeg", id: "img23" },
+    { url: "/assets/image00024.jpeg", id: "img24" },
+    { url: "/assets/image00025.jpeg", id: "img25" },
+    { url: "/assets/image00026.jpeg", id: "img26" },
   ];
 
   const [fullscreenImage, setFullscreenImage] = useState(false)
